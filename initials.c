@@ -7,16 +7,14 @@ int main(void)
 {
     //prompt the user to give his name
     string name = get_string("name: ");
-
-    //delcarer the intials as char and number of 4
     char initials[4];
     int counter = 0;
-    for (int i = 0; i < strlen(name(i)); i++)
+    for (int i = 0; i < strlen(name); i++)
     {
-        if (isupper(name(i)))
+        if (isupper(name[i]))
         {
-            initials[counter] = name(i);
-            counter ++;
+            initials[counter] = name[i];
+            counter++;
         }
 
     }
